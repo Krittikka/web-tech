@@ -88,13 +88,13 @@ html{
 
 .image1-container, .image2-container, .image3-container, .image4-container{
     position: relative;
-    text-align: top;
+    text-align: center;
     color: rgb(239, 30, 30);
 }
 
 .image-text{
     position: absolute;
-    bottom: 0;
+    bottom: 10;
     left: 0;
     right: 0;
     background-color: rgba(1, 0, 0, 0.455);
