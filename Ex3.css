@@ -88,7 +88,7 @@ html{
 
 .image1-container, .image2-container, .image3-container, .image4-container{
     position: relative;
-    text-align: center;
+    text-align: top;
     color: rgb(239, 30, 30);
 }
 
