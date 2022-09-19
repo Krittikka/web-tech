@@ -61,7 +61,7 @@ let hc = 0,
 
 function flip() {
     const idx = Math.floor(Math.random() * 2);
-    const img = ["https://i.postimg.cc/wv58jZNW/Head.png", "https://i.postimg.cc/05f1RgPj/Tail.png"]
+    const img = ["https://thumbs.dreamstime.com/b/one-rupee-coin-shiny-white-background-30801135.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqPvtDwYmeZXwzljpEMDXEYH5WGEbtUkDChAAabSOYxktIYHF3QATNK2DX-8C5qBL3UE&usqp=CAU"]
     if (idx == 0)
         hc += 1;
     else
