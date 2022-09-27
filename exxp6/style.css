@@ -1,0 +1,165 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #e7f5dd;
+
+}
+
+ 
+
+nav ul {
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+ 
+
+nav ul li {
+
+    list-style-type: none;
+
+    padding: 1rem 2rem;
+
+    width: 20%;
+
+    text-align: center;
+
+    background-color: rgb(40, 203, 228);
+
+    border: solid white;
+
+}
+
+ 
+
+nav ul li a {
+
+    text-decoration: none;
+
+    color: white;
+
+    background-color: rgb(40, 203, 228);;
+
+}
+
+ 
+
+section {
+
+    margin: 30px 10px;
+
+    padding: 20px 10px;
+
+}
+
+ 
+
+h1 {
+
+    margin-bottom: 10px;
+
+}
+
+ 
+
+button {
+
+    padding: 5px 20px;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    margin-right: 20px;
+
+}
+
+ 
+
+.time-box {
+
+    text-align: center;
+
+    width: 500px;
+
+    height: 200px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    align-self: center;
+
+    color: #010706;
+
+    background-color: rgb(135, 213, 227);
+
+    border-radius: 30px;
+
+    margin: 20px 0;
+
+    padding-left: 20px;
+
+    padding-right: 10px;
+
+    font-size: 40px;
+
+}
+
+ 
+
+.dynamic_bg {
+
+    height: 300px;
+
+    width: 300px;
+
+}
+
+ 
+
+.box {
+
+    position: relative;
+
+}
+
+ 
+
+.road-img {
+
+    height: 300px;
+
+    width: 100%;
+
+}
+
+ 
+
+.car-img {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 60px;
+
+    width: 200px;
+
+}
+
+ 
+
+.stud {
+
+    font-size: 30px;
+
+}

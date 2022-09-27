@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+ 
+
+    <link rel="stylesheet" href="style.css">
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#">URK20CS2021</a></li>
+
+            <li><a href="#ques-1">Question 1</a></li>
+
+            <li><a href="#ques-2">Question 2</a></li>
+
+            <li><a href="#ques-3">Question 3</a></li>
+
+            <li><a href="#ques-4">Question 4</a></li>
+
+            <li><a href="#ques-5">Question 5</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section>
+
+        <div id="ques-1">
+
+            <h1>Digital Clock</h1>
+
+            <div id="time" class="time-box"></div>
+
+            <button onclick="start()">Start</button>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-2">
+
+            <h1>Changing Colors</h1>
+
+            <div class="dynamic_bg" onload="color_ch()"></div>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-3">
+
+            <h1>Changing Font Size</h1>
+
+            <p id="para1" onmouseover="incSize()" onmouseout="decSize()">move cursor over me to zoom in...</p>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-4">
+
+            <h1>Move Car</h1>
+
+            <div class="box">
+
+                <img src="data:image/jpeg;base64,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W9VVTKR+1V/wp8vcNwGjcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA5vcNx0noHcnxoutZHoHcnxoutZA7GEEIAeeZSEEIAAhBCAAIQQgACEEIAAhBCAAIQQgACEEIAAhBCAAIQQgACEEIAAhBCAAIQQgACEEIAAhBCAAIQQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//Z" class="road-img" id="r-img">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gCScfwLYKcUI0c4srvscSHYtT7K0DRpLvg&usqp=CAU" class="car-img" id="c-img">
+
+            </div>
+
+            <!-- method1 -->
+
+            <button onclick="init(); moveRight();">Move</button>
+
+            <button onclick="stop()">Stop</button>
+
+ 
+
+            <!-- method2 -->
+
+            <!-- <button onclick="start()">Start</button>
+
+            <button onclick="moveRight();">Move</button>
+
+            <button onclick="stop()">Stop</button> -->
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-5">
+
+            <h1>Student Details</h1>
+
+            <button onclick="student()">Show Student Details</button>
+
+            <span id="stu1" class="stud"></span>
+
+            <span id="stu2" class="stud"></span>
+
+        </div>
+
+    </section>
+
+ 
+
+    <script src="logic.js"></script>
+
+</body>
+
+ 
+
+</html>
+
+ 
